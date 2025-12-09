@@ -6,7 +6,7 @@ The theme is based on competitive Call of Duty esports.
 
 ## Colour Palette (Neon Tactical)
 - **Background:** `#0A0D14`
-- **Panel:** `#0A0D14`
+- **Panel:** `#10141F`
 - **Primary Accent (Neon Green):** `#00F2A0`
 - **Secondary Accent (Cyan):** `#00A2FF`
 - **Text Main:** `#E6EEF7`
