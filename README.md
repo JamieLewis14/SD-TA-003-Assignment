@@ -1,7 +1,7 @@
-# Scrimtel – Project Notes
+# Absolute – Project Notes
 
 ## Overview
-Scrimtel is a 5-page website built for a class assignment using HTML, CSS, and JavaScript.  
+Absolute is a 5-page website built for a class assignment using HTML, CSS, and JavaScript.  
 The theme is based on competitive Call of Duty esports.
 
 ## Colour Palette (Neon Tactical)
@@ -17,7 +17,7 @@ The theme is based on competitive Call of Duty esports.
 - **Body Text:** Inter
 
 ## Branding / Logo
-- Name: **Scrimtel** **WIP**
+- Name: **Absolute** 
 - Logo Concept: **(see images/logos folder)**
 - Style Notes:
   - Neon glow accents
@@ -26,13 +26,12 @@ The theme is based on competitive Call of Duty esports.
 
 ## File Structure Conventions
 - All CSS in `css/styles.css`
-- All global JS in `js/main.js`
-- Page-specific JS in their own files if needed
+- All JS in `/js`
 - Shared header and footer on all pages
 - Images stored in `/images`
 
 ## To-Do
-- Redesign logo with defined colour theme, 1 more logo with text for header
+- 
 - 
 - 
 - 

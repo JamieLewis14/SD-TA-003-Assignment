@@ -1,0 +1,152 @@
+[
+  {
+    "homeTeam": "Riyadh Falcons",
+    "awayTeam": "Carolina Royal Ravens",
+    "homeLogo": "/images/riyadh.png",
+    "awayLogo": "/images/carolina.png",
+    "date": "2025-12-12",
+    "time": "21:00",
+    "stage": "Call of Duty League 2026: Stage 1 Major Qualifiers",
+    "format": "Bo5"
+  },
+  {
+    "homeTeam": "G2 Minnesota",
+    "awayTeam": "Boston Breach",
+    "homeLogo": "/images/minnesota.png",
+    "awayLogo": "/images/boston.png",
+    "date": "2025-12-12",
+    "time": "22:30",
+    "stage": "Call of Duty League 2026: Stage 1 Major Qualifiers",
+    "format": "Bo5"
+  },
+  {
+    "homeTeam": "Vancouver Surge",
+    "awayTeam": "Toronto KOI",
+    "homeLogo": "/images/vancouver.png",
+    "awayLogo": "/images/toronto.png",
+    "date": "2025-12-13",
+    "time": "00:00",
+    "stage": "Call of Duty League 2026: Stage 1 Major Qualifiers",
+    "format": "Bo5"
+  },
+  {
+    "homeTeam": "Paris Gentle Mates",
+    "awayTeam": "Los Angeles Thieves",
+    "homeLogo": "/images/gentlemates.png",
+    "awayLogo": "/images/lat.png",
+    "date": "2025-12-13",
+    "time": "21:00",
+    "stage": "Call of Duty League 2026: Stage 1 Major Qualifiers",
+    "format": "Bo5"
+  },
+  {
+    "homeTeam": "OpTic Texas",
+    "awayTeam": "Miami Heretics",
+    "homeLogo": "/images/optic.png",
+    "awayLogo": "/images/miami.png",
+    "date": "2025-12-13",
+    "time": "22:30",
+    "stage": "Call of Duty League 2026: Stage 1 Major Qualifiers",
+    "format": "Bo5"
+  },
+  {
+    "homeTeam": "Vancouver Surge",
+    "awayTeam": "Cloud9 New York",
+    "homeLogo": "/images/vancouver.png",
+    "awayLogo": "/images/newyork.png",
+    "date": "2025-12-14",
+    "time": "00:00",
+    "stage": "Call of Duty League 2026: Stage 1 Major Qualifiers",
+    "format": "Bo5"
+  },
+  {
+    "homeTeam": "Riyadh Falcons",
+    "awayTeam": "Boston Breach",
+    "homeLogo": "/images/riyadh.png",
+    "awayLogo": "/images/boston.png",
+    "date": "2025-12-14",
+    "time": "21:00",
+    "stage": "Call of Duty League 2026: Stage 1 Major Qualifiers",
+    "format": "Bo5"
+  },
+  {
+    "homeTeam": "Miami Heretics",
+    "awayTeam": "Cloud9 New York",
+    "homeLogo": "/images/miami.png",
+    "awayLogo": "/images/newyork.png",
+    "date": "2025-12-14",
+    "time": "22:30",
+    "stage": "Call of Duty League 2026: Stage 1 Major Qualifiers",
+    "format": "Bo5"
+  },
+  {
+    "homeTeam": "Toronto KOI",
+    "awayTeam": "FaZe Vegas",
+    "homeLogo": "/images/toronto.png",
+    "awayLogo": "/images/faze.png",
+    "date": "2025-12-15",
+    "time": "00:00",
+    "stage": "Call of Duty League 2026: Stage 1 Major Qualifiers",
+    "format": "Bo5"
+  },
+  {
+    "homeTeam": "Riyadh Falcons",
+    "awayTeam": "G2 Minnesota",
+    "homeLogo": "/images/riyadh.png",
+    "awayLogo": "/images/minnesota.png",
+    "date": "2026-01-09",
+    "time": "21:00",
+    "stage": "Call of Duty League 2026: Stage 1 Major Qualifiers",
+    "format": "Bo5"
+  },
+  {
+    "homeTeam": "Miami Heretics",
+    "awayTeam": "Carolina Royal Ravens",
+    "homeLogo": "/images/miami.png",
+    "awayLogo": "/images/carolina.png",
+    "date": "2026-01-09",
+    "time": "22:30",
+    "stage": "Call of Duty League 2026: Stage 1 Major Qualifiers",
+    "format": "Bo5"
+  },
+  {
+    "homeTeam": "OpTic Texas",
+    "awayTeam": "FaZe Vegas",
+    "homeLogo": "/images/optic.png",
+    "awayLogo": "/images/faze.png",
+    "date": "2026-01-10",
+    "time": "21:00",
+    "stage": "Call of Duty League 2026: Stage 1 Major Qualifiers",
+    "format": "Bo5"
+  },
+  {
+    "homeTeam": "Vancouver Surge",
+    "awayTeam": "Boston Breach",
+    "homeLogo": "/images/vancouver.png",
+    "awayLogo": "/images/boston.png",
+    "date": "2026-01-10",
+    "time": "22:30",
+    "stage": "Call of Duty League 2026: Stage 1 Major Qualifiers",
+    "format": "Bo5"
+  },
+  {
+    "homeTeam": "Paris Gentle Mates",
+    "awayTeam": "Cloud9 New York",
+    "homeLogo": "/images/gentlemates.png",
+    "awayLogo": "/images/newyork.png",
+    "date": "2026-01-11",
+    "time": "00:00",
+    "stage": "Call of Duty League 2026: Stage 1 Major Qualifiers",
+    "format": "Bo5"
+  },
+  {
+    "homeTeam": "G2 Minnesota",
+    "awayTeam": "Carolina Royal Ravens",
+    "homeLogo": "/images/minnesota.png",
+    "awayLogo": "/images/carolina.png",
+    "date": "2026-01-11",
+    "time": "21:00",
+    "stage": "Call of Duty League 2026: Stage 1 Major Qualifiers",
+    "format": "Bo5"
+  }
+]
