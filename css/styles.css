@@ -358,5 +358,74 @@ body {
 }
 
 tr:nth-child(even) {
-    background-color: #c40000;
+  background: #c40000;
+}
+
+.product-card {
+  background: #111;
+  border: 1px solid #1f1f1f;
+  border-radius: 12px;
+  padding: 16px 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+.product-content {
+  display: flex;
+  justify-content: space-between; /* pushes image to the right */
+  align-items: center;
+}
+
+.product-info {
+  flex: 1; /* left side grows */
+}
+
+.product-image {
+  width: 150px;
+  height: auto;
+  transition: transform .2s;
+}
+
+.store-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* max 3 per row */
+  gap: 20px;              /* controls space between cards */
+  padding: 20px; 
+}
+
+.store-header {
+  padding-left: 15px;
+}
+
+.product-image:hover {
+  transform: scale(2.5);
+  cursor: pointer;
+}
+
+.btn-buy {
+  background: #00f2a0;
+  color: #000;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  margin-top: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-buy:hover {
+  transform: scale(1.1);
+}
+
+.cart-icon {
+  width: 18px;
+  height: 18px;
+  fill: #000;
+}
+
+.product-size {
+  background-color: #777;
 }

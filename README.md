@@ -31,7 +31,7 @@ The theme is based on competitive Call of Duty esports.
 - Images stored in `/images`
 
 ## To-Do
-- 
+- Community Tab (Store, Community Forums, Newsletter Sign-On)
 - 
 - 
 - 
