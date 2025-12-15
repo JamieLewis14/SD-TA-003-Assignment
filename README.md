@@ -5,12 +5,12 @@ Absolute is a 5-page website built for a class assignment using HTML, CSS, and J
 The theme is based on competitive Call of Duty esports.
 
 ## Colour Palette (Neon Tactical)
-- **Background:** `#0A0D14`
-- **Panel:** `#10141F`
+- **Background:** `#05070c`
+- **Panel:** `#0A0D14F`
 - **Primary Accent (Neon Green):** `#00F2A0`
 - **Secondary Accent (Cyan):** `#00A2FF`
 - **Text Main:** `#E6EEF7`
-- **Text Muted:** `#A9B4C6`
+
 
 ## Typography
 - **Headings:** Teko
