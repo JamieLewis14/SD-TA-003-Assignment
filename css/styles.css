@@ -1,18 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&display=swap');
+/* =========================
+   FONT IMPORTS (SITE-WIDE)
+   Used across all pages
+   ========================= */
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
+/* =========================
+   GLOBAL BASE STYLES (SITE-WIDE)
+   Body defaults: background, text colour, base font
+   ========================= */
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background: #05070c;
   color: #f5f7fa;
 }
 
+/* =========================
+   HEADER / NAV (SITE-WIDE)
+   Top navbar, logo, nav links
+   ========================= */
 .site-header {
-  background: #0A0D14;
+  background: #0a0d14;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
@@ -23,35 +33,34 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
 }
 
 .logo {
   width: 60px;
   height: 60px;
   object-fit: contain;
-  width: 300px; 
-  height: auto; 
+  width: 300px;
+  height: auto;
   margin-right: 50px;
   transition: transform 0.2s ease;
 }
 
-/* Logo hover effect */
+/* Logo hover effect (SITE-WIDE HEADER) */
 .logo:hover {
   transform: scale(1.05);
   animation: logo-pulse 0.8s ease-out;
 }
 
-/* Logo hover effect */
+/* Logo hover animation (SITE-WIDE HEADER) */
 @keyframes logo-pulse {
   0% {
-    filter: drop-shadow(0 0 0px #00A2FF);
+    filter: drop-shadow(0 0 0px #00a2ff);
   }
   40% {
-    filter: drop-shadow(0 0 16px #00A2FF);
+    filter: drop-shadow(0 0 16px #00a2ff);
   }
   100% {
-    filter: drop-shadow(0 0 4px #00A2FF);
+    filter: drop-shadow(0 0 4px #00a2ff);
   }
 }
 
@@ -85,7 +94,7 @@ body {
   bottom: 0;
   height: 2px;
   width: 0;
-  background: linear-gradient(90deg, #00F2A0, #00A2FF);
+  background: linear-gradient(90deg, #00f2a0, #00a2ff);
   transition: width 0.2s ease;
 }
 
@@ -105,7 +114,10 @@ body {
   width: 100%;
 }
 
-/* Mobile: stack or compress */
+/* =========================
+   HEADER / NAV RESPONSIVE (SITE-WIDE)
+   Mobile layout adjustments
+   ========================= */
 @media (max-width: 700px) {
   .header-inner {
     flex-direction: column;
@@ -123,9 +135,13 @@ body {
   }
 }
 
+/* =========================
+   CONTENT WRAPPER: MAIN BODY (SITE-WIDE)
+   Used on text/content pages
+   ========================= */
 .main-body {
   border: solid;
-  border-image: linear-gradient(90deg, #00F2A0, #00A2FF) 1;
+  border-image: linear-gradient(90deg, #00f2a0, #00a2ff) 1;
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
@@ -143,6 +159,9 @@ body {
   margin-left: 20px;
 }
 
+/* =========================
+   MAIN BODY RESPONSIVE (SITE-WIDE)
+   ========================= */
 @media (max-width: 700px) {
   .main-body {
     width: 90%;
@@ -154,9 +173,13 @@ body {
   }
 }
 
+/* =========================
+   CONTENT WRAPPER: SECOND BODY (SITE-WIDE)
+   Used for secondary content blocks/pages
+   ========================= */
 .second-body {
   border: solid;
-  border-image: linear-gradient(90deg, #00F2A0, #00A2FF) 1;
+  border-image: linear-gradient(90deg, #00f2a0, #00a2ff) 1;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
@@ -174,6 +197,9 @@ body {
   margin-bottom: 30px;
 }
 
+/* =========================
+   SECOND BODY RESPONSIVE (SITE-WIDE)
+   ========================= */
 @media (max-width: 700px) {
   .second-body {
     width: 95%;
@@ -184,13 +210,17 @@ body {
   }
 }
 
+/* =========================
+   FOOTER (SITE-WIDE)
+   Footer layout + links
+   ========================= */
 .site-footer {
-  background: #0d0d0d;            
-  color: #bfbfbf;                 
+  background: #0d0d0d;
+  color: #bfbfbf;
   padding: 50px 0 20px;
   border-top: 2px solid;
-  border-image: linear-gradient(90deg, #00F2A0, #00A2FF) 1;  
-  font-family: 'Inter', sans-serif;
+  border-image: linear-gradient(90deg, #00f2a0, #00a2ff) 1;
+  font-family: "Inter", sans-serif;
 }
 
 .footer-inner {
@@ -205,7 +235,7 @@ body {
 
 .footer-col h3,
 .footer-col h4 {
-  color: #ffffff;                 
+  color: #ffffff;
   margin-bottom: 12px;
   letter-spacing: 0.5px;
 }
@@ -231,7 +261,7 @@ body {
 }
 
 .footer-col a:hover {
-  color: #00F2A0;                
+  color: #00f2a0;
 }
 
 .socials {
@@ -252,6 +282,10 @@ body {
   color: #777;
 }
 
+/* =========================
+   COMMUNITY PAGE: POWER RANKINGS / TOURNAMENTS
+   Power rankings containers + tournament cards
+   ========================= */
 .power-rankings-container {
   display: flex;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -264,7 +298,7 @@ body {
 
 .power-rankings {
   border: solid;
-  border-image: linear-gradient(90deg, #00F2A0, #00A2FF) 1;
+  border-image: linear-gradient(90deg, #00f2a0, #00a2ff) 1;
   margin-top: 50px;
   width: 50%;
   max-width: 1100px;
@@ -292,7 +326,8 @@ body {
   padding: 10px 12px;
   margin-bottom: 10px;
   border: 1px solid #222;
-  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+  transition: transform 0.15s ease, border-color 0.15s ease,
+    box-shadow 0.15s ease;
 }
 
 .tournament-card h4 {
@@ -309,19 +344,23 @@ body {
 .tournament-tag {
   margin: 0;
   font-size: 0.75rem;
-  color: #00A2FF;
+  color: #00a2ff;
 }
 
 .tournament-card:hover {
   transform: translateY(-2px);
-  border-color: #00A2FF;
+  border-color: #00a2ff;
   box-shadow: 0 0 12px rgba(0, 162, 255, 0.4);
 }
 
 .featured-tournament {
-  border-color: #C9A24E;
+  border-color: #c9a24e;
 }
 
+/* =========================
+   MATCHES PAGE: MATCH LIST / MATCH CARDS
+   Matches section layout + responsive grid
+   ========================= */
 .matches-section {
   padding: 40px 0;
 }
@@ -371,11 +410,11 @@ body {
 }
 
 .match-stage {
-  color: #00A2FF; 
+  color: #00a2ff;
 }
 
 .match-format {
-  color: #fff; 
+  color: #fff;
 }
 
 .match-btn {
@@ -383,7 +422,7 @@ body {
   padding: 8px 14px;
   border-radius: 999px;
   border: none;
-  background: #00F2A0;
+  background: #00f2a0;
   color: #000;
   font-weight: 600;
   cursor: pointer;
@@ -395,21 +434,21 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments (MATCHES PAGE) */
 @media (max-width: 1200px) {
   .matches-list {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments (MATCHES PAGE) */
 @media (max-width: 900px) {
   .matches-list {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments (MATCHES PAGE) */
 @media (max-width: 600px) {
   .matches-list {
     grid-template-columns: 1fr;
@@ -422,31 +461,34 @@ body {
   object-fit: contain;
 }
 
+/* =========================
+   STANDINGS PAGE: TABLE / ROWS / TOOLTIP
+   Standings table grid + hover + tooltip
+   ========================= */
 .standings-table {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 8px;              /* vertical space between rows */
+  gap: 8px; /* vertical space between rows */
 }
 
 /* Each row is a 9-column grid (Rank, Team, CDL, SW, SL, SW%, MW, ML, MW%) */
 .row {
   display: grid;
-  grid-template-columns: 0.6fr 2.2fr repeat(7, 1fr); 
+  grid-template-columns: 0.6fr 2.2fr repeat(7, 1fr);
   align-items: center;
   padding: 8px 12px;
   border-radius: 6px;
-  background: #111;  
+  background: #111;
   transition: background 0.15s ease, transform 0.15s ease;
 }
-
 
 .row-header {
   background: #181818;
   font-weight: 600;
 }
 
-/* Cells */
+/* Cells (STANDINGS PAGE) */
 .cell {
   text-align: center;
 }
@@ -478,6 +520,10 @@ body {
   text-align: center;
 }
 
+/* =========================
+   STORE PAGE: PRODUCT CARDS / GRID / BUTTONS
+   Jersey store styling + add to cart UI
+   ========================= */
 .product-card {
   background: #111;
   border: 1px solid #1f1f1f;
@@ -488,39 +534,39 @@ body {
 
 .product-content {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
 }
 
 .product-info {
-  flex: 1; 
+  flex: 1;
 }
 
 .product-image {
   width: 150px;
   height: auto;
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
 .store-section {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 20px;              
-  padding: 20px; 
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
 }
 
 .store-header {
   padding-left: 15px;
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments (STORE PAGE) */
 @media (max-width: 900px) {
   .store-section {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments (STORE PAGE) */
 @media (max-width: 600px) {
   .store-section {
     grid-template-columns: 1fr;
@@ -563,9 +609,13 @@ body {
   background-color: #777;
 }
 
+/* =========================
+   CLIPS PAGE / CLIPS SECTION
+   Clip grid + hover effects
+   ========================= */
 .clip-section {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 20px;
   text-align: center;
@@ -578,7 +628,7 @@ body {
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
   height: 100%;
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
 .clip-header {
@@ -589,7 +639,7 @@ body {
 
 .clip-title {
   border-bottom: 2px solid;
-  transition: border-color .2s;
+  transition: border-color 0.2s;
 }
 
 .clip:hover {
@@ -602,26 +652,30 @@ body {
 }
 
 .clip-title {
-  border-bottom: 2px solid transparent; 
+  border-bottom: 2px solid transparent;
   transition: border-bottom-color 0.2s ease-in;
 }
 
-/* Every first clip, change hover color */
+/* Every first clip, change hover color (CLIPS PAGE) */
 .clip-card:hover .clip-title {
-   border-bottom-color: #00F2A0;
-   transition: border-bottom-color 0.2s ease-in; 
+  border-bottom-color: #00f2a0;
+  transition: border-bottom-color 0.2s ease-in;
 }
 
-/* Every second clip, change hover color */
+/* Every second clip, change hover color (CLIPS PAGE) */
 .clip-card:nth-child(even):hover .clip-title {
-   border-bottom-color: #00A2FF;
-   transition: border-bottom-color 0.2s ease-in; 
+  border-bottom-color: #00a2ff;
+  transition: border-bottom-color 0.2s ease-in;
 }
 
+/* =========================
+   NEWSLETTER SECTION (SITE-WIDE / HOME/COMMUNITY)
+   Newsletter signup block styling
+   ========================= */
 .newsletter-section {
   background: #0d0d0d;
   border: solid;
-  border-image: linear-gradient(90deg, #00F2A0, #00A2FF) 1;
+  border-image: linear-gradient(90deg, #00f2a0, #00a2ff) 1;
   max-width: 800px;
   margin: 50px auto;
   padding: 30px;
@@ -637,7 +691,7 @@ body {
 }
 
 .newsletter-button {
-  background: #00F2A0;
+  background: #00f2a0;
   color: #000;
   border: none;
   padding: 10px 20px;
@@ -646,7 +700,10 @@ body {
   font-weight: 600;
 }
 
-/* Tooltip for standings table */
+/* =========================
+   STANDINGS TOOLTIP (STANDINGS PAGE)
+   Tooltip text on hover
+   ========================= */
 .tooltip-text {
   visibility: hidden;
   width: 120px;
@@ -677,6 +734,10 @@ body {
   visibility: visible;
 }
 
+/* =========================
+   TEAMS / ROSTERS PAGE: TEAM GRID + PLAYER CARDS
+   Player card layout + responsive
+   ========================= */
 .team-card {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -699,10 +760,10 @@ body {
   gap: 10px;
   position: relative;
   border: solid;
-  border-image: linear-gradient(90deg, #00F2A0, #00A2FF) 1;
+  border-image: linear-gradient(90deg, #00f2a0, #00a2ff) 1;
   padding: 15px;
   cursor: pointer;
-  background: none; 
+  background: none;
   margin-bottom: 10px;
 }
 
@@ -722,8 +783,7 @@ body {
 
 .player-panel {
   color: white;
-  font-family: 'Inter', sans-serif;
-  
+  font-family: "Inter", sans-serif;
 }
 
 .player-name {
@@ -731,24 +791,94 @@ body {
   font-size: 1.2rem;
   text-align: center;
   color: white;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: "Rajdhani", sans-serif;
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments (TEAMS / ROSTERS PAGE) */
 @media (max-width: 1800px) {
   .team-card {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments (TEAMS / ROSTERS PAGE) */
 @media (max-width: 1500px) {
   .team-card {
-    grid-template-columns: repeat(2, 1fr);  }
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments (TEAMS / ROSTERS PAGE) */
 @media (max-width: 900px) {
   .team-card {
-    grid-template-columns: repeat(1, 1fr);  }
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* =========================
+   CART PAGE: CART SUMMARY CARD
+   Cart layout, image, actions
+   ========================= */
+.cart-title {
+  margin: 2rem 0 1rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.cart-card {
+  max-width: 420px;
+  margin: 0 auto 3rem;
+  padding: 20px;
+  background: #111;
+  border: 1px solid #1f1f1f;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  text-align: center;
+}
+
+.cart-image {
+  width: 100%;
+  max-width: 260px;
+  margin: 0 auto 16px;
+  display: block;
+}
+
+.cart-details p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+  color: #e6e6e6;
+}
+
+.cart-details strong {
+  color: #aaa;
+}
+
+.cart-actions {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cart-back {
+  font-size: 0.85rem;
+  color: #888;
+  text-decoration: none;
+}
+
+.cart-back:hover {
+  color: #fff;
+}
+
+.cart-btn-buy {
+  background: #00f2a0;
+  color: #000;
+  border: none;
+  padding: 12px 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+  color: black;
 }

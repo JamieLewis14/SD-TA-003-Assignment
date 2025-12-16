@@ -1,553 +1,668 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <link rel="icon" type="image/ico" href="images/favicon.ico" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>News</title>
-  <link rel="icon" type="image/ico" href="images/favicon.ico">
-  <link href="css/styles.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" />
-</head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="logo-area">
+          <img
+            src="images/sitelogo.png"
+            alt="CoD Esports Hub logo"
+            class="logo"
+            style="width: 300px; height: auto; margin-right: 50px"
+          />
+        </div>
 
-<body>
+        <nav class="main-nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="matches.html" class="nav-link">Matches</a>
+          <a href="standings.html" class="nav-link">Standings</a>
+          <a href="teams.html" class="nav-link">Teams</a>
+          <a href="community.html" class="nav-link">Community</a>
+        </nav>
+      </div>
+    </header>
 
-  <header class="site-header">
-    <div class="header-inner">
-      <div class="logo-area">
-        <img src="images/sitelogo.png" alt="CoD Esports Hub logo" class="logo"
-          style="width: 300px; height: auto; margin-right: 50px;">
+    <div class="store-header">
+      <h2>CDL Team Jerseys</h2>
+      <p>Pick your favourite team and grab their official jersey.</p>
+    </div>
+
+    <section class="store-section" id="store">
+      <article class="product-card" data-id="1">
+        <div class="product-content">
+          <div class="product-info">
+            <h3 class="product-name">Vegas Faze Jersey</h3>
+            <p class="product-team">Vegas Faze</p>
+            <p class="product-price">€79.99</p>
+
+            <div class="product-options">
+              <label class="option-label">Size</label>
+              <select class="product-size">
+                <option value="" disabled selected>Select Size</option>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+              </select>
+            </div>
+
+            <button class="btn-buy" data-id="1">
+              <svg class="cart-icon" viewBox="0 0 24 24">
+                <path
+                  d="M7 4h-2l-3 7v2h2l3-7h11l1 4h2l-2-6h-12l-1-3h-2l1 3zm0 11c-1.1 0-2 .9-2 2s.9 2 
+             2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 
+             2 2 2-.9 2-2-.9-2-2-2z"
+                />
+              </svg>
+              Add to Cart
+            </button>
+          </div>
+
+          <img
+            src="/images/fazejersey.png"
+            alt="Vegas Faze Jersey"
+            class="product-image"
+          />
+        </div>
+      </article>
+
+      <article class="product-card" data-id="2">
+        <div class="product-content">
+          <div class="product-info">
+            <h3 class="product-name">Optic Texas Home Jersey</h3>
+            <p class="product-team">Optic Texas</p>
+            <p class="product-price">€79.99</p>
+
+            <div class="product-options">
+              <label class="option-label">Size</label>
+              <select class="product-size">
+                <option value="" disabled selected>Select Size</option>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+              </select>
+            </div>
+
+            <button class="btn-buy" data-id="2">
+              <svg class="cart-icon" viewBox="0 0 24 24">
+                <path
+                  d="M7 4h-2l-3 7v2h2l3-7h11l1 4h2l-2-6h-12l-1-3h-2l1 3zm0 11c-1.1 0-2 .9-2 2s.9 2 
+             2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 
+             2 2 2-.9 2-2-.9-2-2-2z"
+                />
+              </svg>
+              Add to Cart
+            </button>
+          </div>
+
+          <img
+            src="/images/opticjersey.png"
+            alt="Optic Texas Jersey"
+            class="product-image"
+          />
+        </div>
+      </article>
+
+      <article class="product-card" data-id="3">
+        <div class="product-content">
+          <div class="product-info">
+            <h3 class="product-name">Los Angeles Thieves Home Jersey</h3>
+            <p class="product-team">LA Thieves</p>
+            <p class="product-price">€79.99</p>
+
+            <div class="product-options">
+              <label class="option-label">Size</label>
+              <select class="product-size">
+                <option value="" disabled selected>Select Size</option>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+              </select>
+            </div>
+
+            <button class="btn-buy" data-id="3">
+              <svg class="cart-icon" viewBox="0 0 24 24">
+                <path
+                  d="M7 4h-2l-3 7v2h2l3-7h11l1 4h2l-2-6h-12l-1-3h-2l1 3zm0 11c-1.1 0-2 .9-2 2s.9 2 
+             2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 
+             2 2 2-.9 2-2-.9-2-2-2z"
+                />
+              </svg>
+              Add to Cart
+            </button>
+          </div>
+
+          <img
+            src="/images/latjersey.png"
+            alt="LA Thieves Jersey"
+            class="product-image"
+          />
+        </div>
+      </article>
+
+      <article class="product-card" data-id="4">
+        <div class="product-content">
+          <div class="product-info">
+            <h3 class="product-name">Toronto KOI Home Jersey</h3>
+            <p class="product-team">Toronto KOI</p>
+            <p class="product-price">€79.99</p>
+
+            <div class="product-options">
+              <label class="option-label">Size</label>
+              <select class="product-size">
+                <option value="" disabled selected>Select Size</option>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+              </select>
+            </div>
+
+            <button class="btn-buy" data-id="4">
+              <svg class="cart-icon" viewBox="0 0 24 24">
+                <path
+                  d="M7 4h-2l-3 7v2h2l3-7h11l1 4h2l-2-6h-12l-1-3h-2l1 3zm0 11c-1.1 0-2 .9-2 2s.9 2 
+             2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 
+             2 2 2-.9 2-2-.9-2-2-2z"
+                />
+              </svg>
+              Add to Cart
+            </button>
+          </div>
+
+          <img
+            src="/images/torontojersey.png"
+            alt="toronto KOI Jersey"
+            class="product-image"
+          />
+        </div>
+      </article>
+
+      <article class="product-card" data-id="5">
+        <div class="product-content">
+          <div class="product-info">
+            <h3 class="product-name">Vancouver Surge Jersey</h3>
+            <p class="product-team">LA Thieves</p>
+            <p class="product-price">€79.99</p>
+
+            <div class="product-options">
+              <label class="option-label">Size</label>
+              <select class="product-size">
+                <option value="" disabled selected>Select Size</option>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+              </select>
+            </div>
+
+            <button class="btn-buy" data-id="5">
+              <svg class="cart-icon" viewBox="0 0 24 24">
+                <path
+                  d="M7 4h-2l-3 7v2h2l3-7h11l1 4h2l-2-6h-12l-1-3h-2l1 3zm0 11c-1.1 0-2 .9-2 2s.9 2 
+             2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 
+             2 2 2-.9 2-2-.9-2-2-2z"
+                />
+              </svg>
+              Add to Cart
+            </button>
+          </div>
+
+          <img
+            src="/images/vancouverjersey.png"
+            alt="Vancouver Surge Jersey"
+            class="product-image"
+          />
+        </div>
+      </article>
+
+      <article class="product-card" data-id="6">
+        <div class="product-content">
+          <div class="product-info">
+            <h3 class="product-name">Boston Brech Home Jersey</h3>
+            <p class="product-team">Boston Breach</p>
+            <p class="product-price">€79.99</p>
+
+            <div class="product-options">
+              <label class="option-label">Size</label>
+              <select class="product-size">
+                <option value="" disabled selected>Select Size</option>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+              </select>
+            </div>
+
+            <button class="btn-buy" data-id="6">
+              <svg class="cart-icon" viewBox="0 0 24 24">
+                <path
+                  d="M7 4h-2l-3 7v2h2l3-7h11l1 4h2l-2-6h-12l-1-3h-2l1 3zm0 11c-1.1 0-2 .9-2 2s.9 2 
+             2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 
+             2 2 2-.9 2-2-.9-2-2-2z"
+                />
+              </svg>
+              Add to Cart
+            </button>
+          </div>
+
+          <img
+            src="/images/bostonjersey.png"
+            alt="Boston Breach Jersey"
+            class="product-image"
+          />
+        </div>
+      </article>
+
+      <article class="product-card" data-id="7">
+        <div class="product-content">
+          <div class="product-info">
+            <h3 class="product-name">Miami Heretics Home Jersey</h3>
+            <p class="product-team">Miami Heretics</p>
+            <p class="product-price">€79.99</p>
+
+            <div class="product-options">
+              <label class="option-label">Size</label>
+              <select class="product-size">
+                <option value="" disabled selected>Select Size</option>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+              </select>
+            </div>
+
+            <button class="btn-buy" data-id="7">
+              <svg class="cart-icon" viewBox="0 0 24 24">
+                <path
+                  d="M7 4h-2l-3 7v2h2l3-7h11l1 4h2l-2-6h-12l-1-3h-2l1 3zm0 11c-1.1 0-2 .9-2 2s.9 2 
+             2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 
+             2 2 2-.9 2-2-.9-2-2-2z"
+                />
+              </svg>
+              Add to Cart
+            </button>
+          </div>
+
+          <img
+            src="/images/miamijersey.png"
+            alt="Miami Heretics Jersey"
+            class="product-image"
+          />
+        </div>
+      </article>
+
+      <article class="product-card" data-id="8">
+        <div class="product-content">
+          <div class="product-info">
+            <h3 class="product-name">Paris Gentlemates Home Jersey</h3>
+            <p class="product-team">Paris Gentlemates</p>
+            <p class="product-price">€79.99</p>
+
+            <div class="product-options">
+              <label class="option-label">Size</label>
+              <select class="product-size">
+                <option value="" disabled selected>Select Size</option>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+              </select>
+            </div>
+
+            <button class="btn-buy" data-id="8">
+              <svg class="cart-icon" viewBox="0 0 24 24">
+                <path
+                  d="M7 4h-2l-3 7v2h2l3-7h11l1 4h2l-2-6h-12l-1-3h-2l1 3zm0 11c-1.1 0-2 .9-2 2s.9 2 
+             2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 
+             2 2 2-.9 2-2-.9-2-2-2z"
+                />
+              </svg>
+              Add to Cart
+            </button>
+          </div>
+
+          <img
+            src="/images/gentlematesjersey.png"
+            alt="Paris Gentlemates Jersey"
+            class="product-image"
+          />
+        </div>
+      </article>
+
+      <article class="product-card" data-id="9">
+        <div class="product-content">
+          <div class="product-info">
+            <h3 class="product-name">Riyadh Falcons Home Jersey</h3>
+            <p class="product-team">Riyadh Falcons</p>
+            <p class="product-price">€79.99</p>
+
+            <div class="product-options">
+              <label class="option-label">Size</label>
+              <select class="product-size">
+                <option value="" disabled selected>Select Size</option>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+              </select>
+            </div>
+
+            <button class="btn-buy" data-id="9">
+              <svg class="cart-icon" viewBox="0 0 24 24">
+                <path
+                  d="M7 4h-2l-3 7v2h2l3-7h11l1 4h2l-2-6h-12l-1-3h-2l1 3zm0 11c-1.1 0-2 .9-2 2s.9 2 
+             2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 
+             2 2 2-.9 2-2-.9-2-2-2z"
+                />
+              </svg>
+              Add to Cart
+            </button>
+          </div>
+
+          <img
+            src="/images/falconsjersey.png"
+            alt="Riyadh Falcons Jersey"
+            class="product-image"
+          />
+        </div>
+      </article>
+
+      <article class="product-card" data-id="10">
+        <div class="product-content">
+          <div class="product-info">
+            <h3 class="product-name">Carolina Royal Ravens Home Jersey</h3>
+            <p class="product-team">Carolina Royal Ravens</p>
+            <p class="product-price">€79.99</p>
+
+            <div class="product-options">
+              <label class="option-label">Size</label>
+              <select class="product-size">
+                <option value="" disabled selected>Select Size</option>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+              </select>
+            </div>
+
+            <button class="btn-buy" data-id="10">
+              <svg class="cart-icon" viewBox="0 0 24 24">
+                <path
+                  d="M7 4h-2l-3 7v2h2l3-7h11l1 4h2l-2-6h-12l-1-3h-2l1 3zm0 11c-1.1 0-2 .9-2 2s.9 2 
+             2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 
+             2 2 2-.9 2-2-.9-2-2-2z"
+                />
+              </svg>
+              Add to Cart
+            </button>
+          </div>
+
+          <img
+            src="/images/carolinajersey.png"
+            alt="Royal Ravens Jersey"
+            class="product-image"
+          />
+        </div>
+      </article>
+
+      <article class="product-card" data-id="11">
+        <div class="product-content">
+          <div class="product-info">
+            <h3 class="product-name">C9 New York Jersey</h3>
+            <p class="product-team">C9 New York</p>
+            <p class="product-price">€79.99</p>
+
+            <div class="product-options">
+              <label class="option-label">Size</label>
+              <select class="product-size">
+                <option value="" disabled selected>Select Size</option>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+              </select>
+            </div>
+
+            <button class="btn-buy" data-id="11">
+              <svg class="cart-icon" viewBox="0 0 24 24">
+                <path
+                  d="M7 4h-2l-3 7v2h2l3-7h11l1 4h2l-2-6h-12l-1-3h-2l1 3zm0 11c-1.1 0-2 .9-2 2s.9 2 
+             2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 
+             2 2 2-.9 2-2-.9-2-2-2z"
+                />
+              </svg>
+              Add to Cart
+            </button>
+          </div>
+
+          <img
+            src="/images/c9jersey.png"
+            alt="C9 New York Jersey"
+            class="product-image"
+          />
+        </div>
+      </article>
+
+      <article class="product-card" data-id="12">
+        <div class="product-content">
+          <div class="product-info">
+            <h3 class="product-name">G2 Minnesota Jersey</h3>
+            <p class="product-team">G2 Minnesota</p>
+            <p class="product-price">€79.99</p>
+
+            <div class="product-options">
+              <label class="option-label">Size</label>
+              <select class="product-size">
+                <option value="" disabled selected>Select Size</option>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+              </select>
+            </div>
+
+            <button class="btn-buy" data-id="12">
+              <svg class="cart-icon" viewBox="0 0 24 24">
+                <path
+                  d="M7 4h-2l-3 7v2h2l3-7h11l1 4h2l-2-6h-12l-1-3h-2l1 3zm0 11c-1.1 0-2 .9-2 2s.9 2 
+             2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 
+             2 2 2-.9 2-2-.9-2-2-2z"
+                />
+              </svg>
+              Add to Cart
+            </button>
+          </div>
+
+          <img
+            src="/images/g2jersey.png"
+            alt="G2 Minnesota Jersey"
+            class="product-image"
+          />
+        </div>
+      </article>
+
+      <article class="product-card" data-id="13">
+        <div class="product-content">
+          <div class="product-info">
+            <h3 class="product-name">
+              *LIMITED EDITION* Optic Gaming 2017 Champs Jersey
+            </h3>
+            <p class="product-team">Optic Gaming</p>
+            <p class="product-price">€119.99</p>
+
+            <div class="product-options">
+              <label class="option-label">Size</label>
+              <select class="product-size">
+                <option value="" disabled selected>Select Size</option>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+              </select>
+            </div>
+
+            <button class="btn-buy" data-id="13">
+              <svg class="cart-icon" viewBox="0 0 24 24">
+                <path
+                  d="M7 4h-2l-3 7v2h2l3-7h11l1 4h2l-2-6h-12l-1-3h-2l1 3zm0 11c-1.1 0-2 .9-2 2s.9 2 
+             2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 
+             2 2 2-.9 2-2-.9-2-2-2z"
+                />
+              </svg>
+              Add to Cart
+            </button>
+          </div>
+
+          <img
+            src="/images/2017optic.png"
+            alt="Optic 2017 Champs Jersey"
+            class="product-image"
+          />
+        </div>
+      </article>
+    </section>
+
+    <div class="clip-header">
+      <h2>Absolute Community Trending Showcase</h2>
+      <p>
+        Check out some videos that have been blowing up in the scene recently.
+      </p>
+    </div>
+
+    <section class="clip-section" id="clip">
+      <div class="clip-card">
+        <h3 class="clip-title">CDL Opening Weekend Recap</h3>
+        <iframe
+          class="clip"
+          src="https://www.youtube.com/embed/HDeAXHuKjx8?si=0z8tohpgah9air6I"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
       </div>
 
-      <nav class="main-nav">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="matches.html" class="nav-link">Matches</a>
-        <a href="standings.html" class="nav-link">Standings</a>
-        <a href="teams.html" class="nav-link">Teams</a>
-        <a href="community.html" class="nav-link">Community</a>
-      </nav>
-    </div>
-  </header>
-
-  <div class="store-header">
-    <h2>CDL Team Jerseys</h2>
-    <p>Pick your favourite team and grab their official jersey.</p>
-  </div>
-
-  <section class="store-section" id="store">
-
-    <article class="product-card" data-id="1">
-      <div class="product-content">
-        <div class="product-info">
-          <h3 class="product-name">Vegas Faze Jersey</h3>
-          <p class="product-team">Vegas Faze</p>
-          <p class="product-price">€79.99</p>
-
-          <div class="product-options">
-            <label class="option-label">Size</label>
-            <select class="product-size">
-              <option value="" disabled selected>Select Size</option>
-              <option value="s">S</option>
-              <option value="m">M</option>
-              <option value="l">L</option>
-              <option value="xl">XL</option>
-            </select>
-          </div>
-
-          <button class="btn-buy" data-id="1">
-            <svg class="cart-icon" viewBox="0 0 24 24">
-              <path d="M7 4h-2l-3 7v2h2l3-7h11l1 4h2l-2-6h-12l-1-3h-2l1 3zm0 11c-1.1 0-2 .9-2 2s.9 2 
-             2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 
-             2 2 2-.9 2-2-.9-2-2-2z" />
-            </svg>
-            Add to Cart
-          </button>
-          </div>
-
-          <img src="/images/fazejersey.png" alt="Vegas Faze Jersey" class="product-image">
-        </div>
-    </article>
-
-    <article class="product-card" data-id="2">
-      <div class="product-content">
-        <div class="product-info">
-          <h3 class="product-name">Optic Texas Home Jersey</h3>
-          <p class="product-team">Optic Texas</p>
-          <p class="product-price">€79.99</p>
-
-          <div class="product-options">
-            <label class="option-label">Size</label>
-            <select class="product-size">
-              <option value="" disabled selected>Select Size</option>
-              <option value="s">S</option>
-              <option value="m">M</option>
-              <option value="l">L</option>
-              <option value="xl">XL</option>
-            </select>
-          </div>
-
-          <button class="btn-buy" data-id="2">
-            <svg class="cart-icon" viewBox="0 0 24 24">
-              <path d="M7 4h-2l-3 7v2h2l3-7h11l1 4h2l-2-6h-12l-1-3h-2l1 3zm0 11c-1.1 0-2 .9-2 2s.9 2 
-             2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 
-             2 2 2-.9 2-2-.9-2-2-2z" />
-            </svg>
-            Add to Cart
-          </button>
-          </div>
-
-          <img src="/images/opticjersey.png" alt="Optic Texas Jersey" class="product-image">
-        </div>
-    </article>
-
-    <article class="product-card" data-id="3">
-      <div class="product-content">
-        <div class="product-info">
-          <h3 class="product-name">Los Angeles Thieves Home Jersey</h3>
-          <p class="product-team">LA Thieves</p>
-          <p class="product-price">€79.99</p>
-
-          <div class="product-options">
-            <label class="option-label">Size</label>
-            <select class="product-size">
-              <option value="" disabled selected>Select Size</option>
-              <option value="s">S</option>
-              <option value="m">M</option>
-              <option value="l">L</option>
-              <option value="xl">XL</option>
-            </select>
-          </div>
-
-          <button class="btn-buy" data-id="3">
-            <svg class="cart-icon" viewBox="0 0 24 24">
-              <path d="M7 4h-2l-3 7v2h2l3-7h11l1 4h2l-2-6h-12l-1-3h-2l1 3zm0 11c-1.1 0-2 .9-2 2s.9 2 
-             2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 
-             2 2 2-.9 2-2-.9-2-2-2z" />
-            </svg>
-            Add to Cart
-          </button>
-          </div>
-
-          <img src="/images/latjersey.png" alt="LA Thieves Jersey" class="product-image">
-        </div>
-    </article>
-
-    <article class="product-card" data-id="4">
-      <div class="product-content">
-        <div class="product-info">
-          <h3 class="product-name">Toronto KOI Home Jersey</h3>
-          <p class="product-team">Toronto KOI</p>
-          <p class="product-price">€79.99</p>
-
-          <div class="product-options">
-            <label class="option-label">Size</label>
-            <select class="product-size">
-              <option value="" disabled selected>Select Size</option>
-              <option value="s">S</option>
-              <option value="m">M</option>
-              <option value="l">L</option>
-              <option value="xl">XL</option>
-            </select>
-          </div>
-
-          <button class="btn-buy" data-id="4">
-            <svg class="cart-icon" viewBox="0 0 24 24">
-              <path d="M7 4h-2l-3 7v2h2l3-7h11l1 4h2l-2-6h-12l-1-3h-2l1 3zm0 11c-1.1 0-2 .9-2 2s.9 2 
-             2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 
-             2 2 2-.9 2-2-.9-2-2-2z" />
-            </svg>
-            Add to Cart
-          </button>
-          </div>
-
-          <img src="/images/torontojersey.png" alt="toronto KOI Jersey" class="product-image">
-        </div>
-    </article>
-
-    <article class="product-card" data-id="5">
-      <div class="product-content">
-        <div class="product-info">
-          <h3 class="product-name">Vancouver Surge Jersey</h3>
-          <p class="product-team">LA Thieves</p>
-          <p class="product-price">€79.99</p>
-
-          <div class="product-options">
-            <label class="option-label">Size</label>
-            <select class="product-size">
-              <option value="" disabled selected>Select Size</option>
-              <option value="s">S</option>
-              <option value="m">M</option>
-              <option value="l">L</option>
-              <option value="xl">XL</option>
-            </select>
-          </div>
-
-          <button class="btn-buy" data-id="5">
-            <svg class="cart-icon" viewBox="0 0 24 24">
-              <path d="M7 4h-2l-3 7v2h2l3-7h11l1 4h2l-2-6h-12l-1-3h-2l1 3zm0 11c-1.1 0-2 .9-2 2s.9 2 
-             2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 
-             2 2 2-.9 2-2-.9-2-2-2z" />
-            </svg>
-            Add to Cart
-          </button>
-          </div>
-
-          <img src="/images/vancouverjersey.png" alt="Vancouver Surge Jersey" class="product-image">
-        </div>
-    </article>
-
-    <article class="product-card" data-id="6">
-      <div class="product-content">
-        <div class="product-info">
-          <h3 class="product-name">Boston Brech Home Jersey</h3>
-          <p class="product-team">Boston Breach</p>
-          <p class="product-price">€79.99</p>
-
-          <div class="product-options">
-            <label class="option-label">Size</label>
-            <select class="product-size">
-              <option value="" disabled selected>Select Size</option>
-              <option value="s">S</option>
-              <option value="m">M</option>
-              <option value="l">L</option>
-              <option value="xl">XL</option>
-            </select>
-          </div>
-
-          <button class="btn-buy" data-id="6">
-            <svg class="cart-icon" viewBox="0 0 24 24">
-              <path d="M7 4h-2l-3 7v2h2l3-7h11l1 4h2l-2-6h-12l-1-3h-2l1 3zm0 11c-1.1 0-2 .9-2 2s.9 2 
-             2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 
-             2 2 2-.9 2-2-.9-2-2-2z" />
-            </svg>
-            Add to Cart
-          </button>
-          </div>
-
-          <img src="/images/bostonjersey.png" alt="Boston Breach Jersey" class="product-image">
-        </div>
-    </article>
-
-    <article class="product-card" data-id="7">
-      <div class="product-content">
-        <div class="product-info">
-          <h3 class="product-name">Miami Heretics Home Jersey</h3>
-          <p class="product-team">Miami Heretics</p>
-          <p class="product-price">€79.99</p>
-
-          <div class="product-options">
-            <label class="option-label">Size</label>
-            <select class="product-size">
-              <option value="" disabled selected>Select Size</option>
-              <option value="s">S</option>
-              <option value="m">M</option>
-              <option value="l">L</option>
-              <option value="xl">XL</option>
-            </select>
-          </div>
-
-          <button class="btn-buy" data-id="7">
-            <svg class="cart-icon" viewBox="0 0 24 24">
-              <path d="M7 4h-2l-3 7v2h2l3-7h11l1 4h2l-2-6h-12l-1-3h-2l1 3zm0 11c-1.1 0-2 .9-2 2s.9 2 
-             2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 
-             2 2 2-.9 2-2-.9-2-2-2z" />
-            </svg>
-            Add to Cart
-          </button>
-          </div>
-
-          <img src="/images/miamijersey.png" alt="Miami Heretics Jersey" class="product-image">
-        </div>
-    </article>
-    
-
-    <article class="product-card" data-id="8">
-      <div class="product-content">
-        <div class="product-info">
-          <h3 class="product-name">Paris Gentlemates Home Jersey</h3>
-          <p class="product-team">Paris Gentlemates</p>
-          <p class="product-price">€79.99</p>
-
-          <div class="product-options">
-            <label class="option-label">Size</label>
-            <select class="product-size">
-              <option value="" disabled selected>Select Size</option>
-              <option value="s">S</option>
-              <option value="m">M</option>
-              <option value="l">L</option>
-              <option value="xl">XL</option>
-            </select>
-          </div>
-
-          <button class="btn-buy" data-id="8">
-            <svg class="cart-icon" viewBox="0 0 24 24">
-              <path d="M7 4h-2l-3 7v2h2l3-7h11l1 4h2l-2-6h-12l-1-3h-2l1 3zm0 11c-1.1 0-2 .9-2 2s.9 2 
-             2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 
-             2 2 2-.9 2-2-.9-2-2-2z" />
-            </svg>
-            Add to Cart
-          </button>
-          </div>
-
-          <img src="/images/gentlematesjersey.png" alt="Paris Gentlemates Jersey" class="product-image">
-        </div>
-    </article>
-
-    <article class="product-card" data-id="9">
-      <div class="product-content">
-        <div class="product-info">
-          <h3 class="product-name">Riyadh Falcons Home Jersey</h3>
-          <p class="product-team">Riyadh Falcons</p>
-          <p class="product-price">€79.99</p>
-
-          <div class="product-options">
-            <label class="option-label">Size</label>
-            <select class="product-size">
-              <option value="" disabled selected>Select Size</option>
-              <option value="s">S</option>
-              <option value="m">M</option>
-              <option value="l">L</option>
-              <option value="xl">XL</option>
-            </select>
-          </div>
-
-          <button class="btn-buy" data-id="9">
-            <svg class="cart-icon" viewBox="0 0 24 24">
-              <path d="M7 4h-2l-3 7v2h2l3-7h11l1 4h2l-2-6h-12l-1-3h-2l1 3zm0 11c-1.1 0-2 .9-2 2s.9 2 
-             2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 
-             2 2 2-.9 2-2-.9-2-2-2z" />
-            </svg>
-            Add to Cart
-          </button>
-          </div>
-
-          <img src="/images/falconsjersey.png" alt="Riyadh Falcons Jersey" class="product-image">
-        </div>
-    </article>
-
-    <article class="product-card" data-id="10">
-      <div class="product-content">
-        <div class="product-info">
-          <h3 class="product-name">Carolina Royal Ravens Home Jersey</h3>
-          <p class="product-team">Carolina Royal Ravens</p>
-          <p class="product-price">€79.99</p>
-
-          <div class="product-options">
-            <label class="option-label">Size</label>
-            <select class="product-size">
-              <option value="" disabled selected>Select Size</option>
-              <option value="s">S</option>
-              <option value="m">M</option>
-              <option value="l">L</option>
-              <option value="xl">XL</option>
-            </select>
-          </div>
-
-          <button class="btn-buy" data-id="10">
-            <svg class="cart-icon" viewBox="0 0 24 24">
-              <path d="M7 4h-2l-3 7v2h2l3-7h11l1 4h2l-2-6h-12l-1-3h-2l1 3zm0 11c-1.1 0-2 .9-2 2s.9 2 
-             2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 
-             2 2 2-.9 2-2-.9-2-2-2z" />
-            </svg>
-            Add to Cart
-          </button>
-          </div>
-
-          <img src="/images/carolinajersey.png" alt="Royal Ravens Jersey" class="product-image">
-        </div>
-    </article>
-
-    <article class="product-card" data-id="11">
-      <div class="product-content">
-        <div class="product-info">
-          <h3 class="product-name">C9 New York Jersey</h3>
-          <p class="product-team">C9 New York</p>
-          <p class="product-price">€79.99</p>
-
-          <div class="product-options">
-            <label class="option-label">Size</label>
-            <select class="product-size">
-              <option value="" disabled selected>Select Size</option>
-              <option value="s">S</option>
-              <option value="m">M</option>
-              <option value="l">L</option>
-              <option value="xl">XL</option>
-            </select>
-          </div>
-
-          <button class="btn-buy" data-id="11">
-            <svg class="cart-icon" viewBox="0 0 24 24">
-              <path d="M7 4h-2l-3 7v2h2l3-7h11l1 4h2l-2-6h-12l-1-3h-2l1 3zm0 11c-1.1 0-2 .9-2 2s.9 2 
-             2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 
-             2 2 2-.9 2-2-.9-2-2-2z" />
-            </svg>
-            Add to Cart
-          </button>
-          </div>
-
-          <img src="/images/c9jersey.png" alt="C9 New York Jersey" class="product-image">
-        </div>
-    </article>
-
-    <article class="product-card" data-id="12">
-      <div class="product-content">
-        <div class="product-info">
-          <h3 class="product-name">G2 Minnesota Jersey</h3>
-          <p class="product-team">G2 Minnesota</p>
-          <p class="product-price">€79.99</p>
-
-          <div class="product-options">
-            <label class="option-label">Size</label>
-            <select class="product-size">
-              <option value="" disabled selected>Select Size</option>
-              <option value="s">S</option>
-              <option value="m">M</option>
-              <option value="l">L</option>
-              <option value="xl">XL</option>
-            </select>
-          </div>
-
-          <button class="btn-buy" data-id="12">
-            <svg class="cart-icon" viewBox="0 0 24 24">
-              <path d="M7 4h-2l-3 7v2h2l3-7h11l1 4h2l-2-6h-12l-1-3h-2l1 3zm0 11c-1.1 0-2 .9-2 2s.9 2 
-             2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 
-             2 2 2-.9 2-2-.9-2-2-2z" />
-            </svg>
-            Add to Cart
-          </button>
-          </div>
-
-          <img src="/images/g2jersey.png" alt="G2 Minnesota Jersey" class="product-image">
-        </div>
-    </article>
-
-    <article class="product-card" data-id="13">
-      <div class="product-content">
-        <div class="product-info">
-          <h3 class="product-name">*LIMITED EDITION* Optic Gaming 2017 Champs Jersey</h3>
-          <p class="product-team">Optic Gaming</p>
-          <p class="product-price">€119.99</p>
-
-          <div class="product-options">
-            <label class="option-label">Size</label>
-            <select class="product-size">
-              <option value="" disabled selected>Select Size</option>
-              <option value="s">S</option>
-              <option value="m">M</option>
-              <option value="l">L</option>
-              <option value="xl">XL</option>
-            </select>
-          </div>
-
-          <button class="btn-buy" data-id="13">
-            <svg class="cart-icon" viewBox="0 0 24 24">
-              <path d="M7 4h-2l-3 7v2h2l3-7h11l1 4h2l-2-6h-12l-1-3h-2l1 3zm0 11c-1.1 0-2 .9-2 2s.9 2 
-             2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 
-             2 2 2-.9 2-2-.9-2-2-2z" />
-            </svg>
-            Add to Cart
-          </button>
-        </div>
-
-        <img src="/images/2017optic.png" alt="Optic 2017 Champs Jersey" class="product-image">
-
-      </div>
-    </article>
-
-  </section>
-
-  <div class="clip-header">
-    <h2>Absolute Community Trending Showcase</h2>
-    <p>Check out some videos that have been blowing up in the scene recently.</p>
-  </div>
-
-  <section class="clip-section" id="clip">
-    <div class="clip-card">
-      <h3 class="clip-title">CDL Opening Weekend Recap</h3>
-      <iframe class="clip" src="https://www.youtube.com/embed/HDeAXHuKjx8?si=0z8tohpgah9air6I"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-
-    <div class="clip-card">
-      <h3 class="clip-title">Top 5 Plays from CDL Opening Weekend</h3>
-      <iframe class="clip" src="https://www.youtube.com/embed/90YvmObFEcQ?si=SEwSBDPXmqJfY86G"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-
-    <div class="clip-card">
-      <h3 class="clip-title">TacticalRab - CDL Meta Changes</h3>
-      <iframe class="clip" src="https://www.youtube.com/embed/lLvJnYGj404?si=jsvRqXeZ_9dvG1KZ"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-
-    <div class="clip-card">
-      <h3 class="clip-title">ZooMaa reacts to Faze vs 100T</h3>
-      <iframe class="clip" src="https://www.youtube.com/embed/VF2hsujieqI?si=7Mi7mLyjDVSNTSqi"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-
-    <div class="clip-card">
-      <h3 class="clip-title">How Gentlemates Dominated the Kaysan 20k</h3>
-      <iframe class="clip" src="https://www.youtube.com/embed/tFtPNTuOM0U?si=ahtQVqFa_rP7MREF"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-
-  </section>
-
-  <section class="newsletter-section">
-    <h2 class="newsletter-header">Subscribe to our Newsletter</h2>
-    <p>Stay updated with the latest CDL news, match highlights, and exclusive offers.</p>
-    <form class="newsletter-form">
-      <input type="email" class="newsletter-input" placeholder="Enter your email" required>
-      <button type="submit" class="newsletter-button">Subscribe</button>
-    </form>
-  </section>
-
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-col">
-        <h3>Absolute CDL</h3>
-        <p>Your home for CDL updates, stats, news, and competitive insights.</p>
+      <div class="clip-card">
+        <h3 class="clip-title">Top 5 Plays from CDL Opening Weekend</h3>
+        <iframe
+          class="clip"
+          src="https://www.youtube.com/embed/90YvmObFEcQ?si=SEwSBDPXmqJfY86G"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
       </div>
 
-      <div class="footer-col">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="matches.html">Matches</a></li>
-          <li><a href="standings.html">Standings</a></li>
-          <li><a href="teams.html">Teams</a></li>
-          <li><a href="community.html">News</a></li>
-        </ul>
+      <div class="clip-card">
+        <h3 class="clip-title">TacticalRab - CDL Meta Changes</h3>
+        <iframe
+          class="clip"
+          src="https://www.youtube.com/embed/lLvJnYGj404?si=jsvRqXeZ_9dvG1KZ"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
       </div>
 
-      <div class="footer-col">
-        <h4>Follow Us</h4>
-        <div class="socials">
-          <a href="#">YouTube</a>
-          <a href="#">X</a>
-          <a href="#">Twitch</a>
-          <a href="#">Discord</a>
+      <div class="clip-card">
+        <h3 class="clip-title">ZooMaa reacts to Faze vs 100T</h3>
+        <iframe
+          class="clip"
+          src="https://www.youtube.com/embed/VF2hsujieqI?si=7Mi7mLyjDVSNTSqi"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div class="clip-card">
+        <h3 class="clip-title">How Gentlemates Dominated the Kaysan 20k</h3>
+        <iframe
+          class="clip"
+          src="https://www.youtube.com/embed/tFtPNTuOM0U?si=ahtQVqFa_rP7MREF"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="newsletter-section">
+      <h2 class="newsletter-header">Subscribe to our Newsletter</h2>
+      <p>
+        Stay updated with the latest CDL news, match highlights, and exclusive
+        offers.
+      </p>
+      <form class="newsletter-form">
+        <input
+          type="email"
+          class="newsletter-input"
+          placeholder="Enter your email"
+          required
+        />
+        <button type="submit" class="newsletter-button">Subscribe</button>
+      </form>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-col">
+          <h3>Absolute CDL</h3>
+          <p>
+            Your home for CDL updates, stats, news, and competitive insights.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="matches.html">Matches</a></li>
+            <li><a href="standings.html">Standings</a></li>
+            <li><a href="teams.html">Teams</a></li>
+            <li><a href="community.html">News</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <div class="socials">
+            <a href="#">YouTube</a>
+            <a href="#">X</a>
+            <a href="#">Twitch</a>
+            <a href="#">Discord</a>
+          </div>
         </div>
       </div>
 
-    </div>
-
-    <div class="footer-bottom">
-      <p>© Absolute. All Rights Reserved.</p>
-    </div>
-  </footer>
-  <script src="js/store.js"></script>
-</body>
-
+      <div class="footer-bottom">
+        <p>© Absolute. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
 </html>

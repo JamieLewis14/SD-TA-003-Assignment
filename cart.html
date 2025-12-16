@@ -1,17 +1,23 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Matches</title>
-    <link rel="icon" type="image/ico" href="images/favicon.ico" />
+    <title>Absolute</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <link href="css/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css"
     />
   </head>
-
   <body>
     <header class="site-header">
       <div class="header-inner">
@@ -33,13 +39,22 @@
       </div>
     </header>
 
-    <section class="match-section">
-      <div class="section-header">
-        <h2>Upcoming Matches</h2>
+    <h1 class="cart-title">Checkout</h1>
+
+    <div class="cart-card">
+      <img id="jerseyImg" alt="" class="cart-image" />
+
+      <div class="cart-details">
+        <p><strong>Team:</strong> <span id="teamName"></span></p>
+        <p><strong>Size:</strong> <span id="jerseySize"></span></p>
+        <p><strong>Price:</strong> <span id="price"></span></p>
       </div>
 
-      <div id="matchesList" class="matches-list"></div>
-    </section>
+      <div class="cart-actions">
+        <button id="buyBtn" type="button" class="cart-btn-buy">Buy</button>
+        <a href="community.html" class="cart-back">Back to Shop</a>
+      </div>
+    </div>
 
     <footer class="site-footer">
       <div class="footer-inner">
@@ -57,7 +72,7 @@
             <li><a href="matches.html">Matches</a></li>
             <li><a href="standings.html">Standings</a></li>
             <li><a href="teams.html">Teams</a></li>
-            <li><a href="community.html">Community</a></li>
+            <li><a href="community.html">News</a></li>
           </ul>
         </div>
 
@@ -76,6 +91,7 @@
         <p>© Absolute. All Rights Reserved.</p>
       </div>
     </footer>
-    <script src="js/index.js" defer></script>
+
+    <script src="js/index.js"></script>
   </body>
 </html>
