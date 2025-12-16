@@ -15,6 +15,7 @@ The theme is based on competitive Call of Duty esports.
 ## Typography
 - **Headings:** Teko
 - **Body Text:** Inter
+- **Other:** Rajdhani
 
 ## Branding / Logo
 - Name: **Absolute** 
@@ -26,12 +27,12 @@ The theme is based on competitive Call of Duty esports.
 
 ## File Structure Conventions
 - All CSS in `css/styles.css`
-- All JS in `/js`
+- All JS + JSON in `/js`
 - Shared header and footer on all pages
 - Images stored in `/images`
 
 ## To-Do
-- Community Tab (Store, Community Forums, Newsletter Sign-On)
+- Cart implementation
 - 
 - 
 - 

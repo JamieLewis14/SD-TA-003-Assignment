@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: 'Inter', sans-serif;
   background: #05070c;
   color: #f5f7fa;
 }
@@ -426,15 +432,15 @@ body {
 /* Each row is a 9-column grid (Rank, Team, CDL, SW, SL, SW%, MW, ML, MW%) */
 .row {
   display: grid;
-  grid-template-columns: 0.6fr 2.2fr repeat(7, 1fr); /* tweak ratios as needed */
+  grid-template-columns: 0.6fr 2.2fr repeat(7, 1fr); 
   align-items: center;
   padding: 8px 12px;
   border-radius: 6px;
-  background: #111;      /* base background for rows */
+  background: #111;  
   transition: background 0.15s ease, transform 0.15s ease;
 }
 
-/* Header row style */
+
 .row-header {
   background: #181818;
   font-weight: 600;
@@ -449,14 +455,12 @@ body {
   font-weight: 600;
 }
 
-/* Left-align team name + logo only */
 .row .cell:nth-child(2) {
   text-align: left;
 }
 
-/* Hover: entire row including the spacing */
 .row:hover {
-  background: #1E1E1E;
+  background: #810a2494;
   transform: scale(1.01);
 }
 
@@ -642,6 +646,7 @@ body {
   font-weight: 600;
 }
 
+/* Tooltip for standings table */
 .tooltip-text {
   visibility: hidden;
   width: 120px;
@@ -676,11 +681,13 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 20px;
+  margin: 0 auto;
+  justify-items: center;
 }
 
 .team-section h3 {
   margin-bottom: 8px;
-  margin-left: 20px;
+  margin-left: 50px;
 }
 
 .player {
@@ -691,6 +698,12 @@ body {
   width: 400px;
   gap: 10px;
   position: relative;
+  border: solid;
+  border-image: linear-gradient(90deg, #00F2A0, #00A2FF) 1;
+  padding: 15px;
+  cursor: pointer;
+  background: none; 
+  margin-bottom: 10px;
 }
 
 .player img {
@@ -700,6 +713,25 @@ body {
   object-position: 50% 10%;
   display: block;
   max-width: 100%;
+  transition: 0.2s ease;
+}
+
+.player img:hover {
+  transform: scale(1.05);
+}
+
+.player-panel {
+  color: white;
+  font-family: 'Inter', sans-serif;
+  
+}
+
+.player-name {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+  color: white;
+  font-family: 'Rajdhani', sans-serif;
 }
 
 /* Responsive adjustments */
