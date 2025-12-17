@@ -56,9 +56,11 @@ body {
   0% {
     filter: drop-shadow(0 0 0px #00a2ff);
   }
+
   40% {
     filter: drop-shadow(0 0 16px #00a2ff);
   }
+
   100% {
     filter: drop-shadow(0 0 4px #00a2ff);
   }
@@ -88,13 +90,13 @@ body {
 }
 
 .nav-link::after {
+  background: linear-gradient(90deg, #00f2a0, #00a2ff);
   content: "";
   position: absolute;
   left: 0;
   bottom: 0;
   height: 2px;
   width: 0;
-  background: linear-gradient(90deg, #00f2a0, #00a2ff);
   transition: width 0.2s ease;
 }
 
@@ -469,7 +471,8 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 8px; /* vertical space between rows */
+  gap: 8px;
+  /* vertical space between rows */
 }
 
 /* Each row is a 9-column grid (Rank, Team, CDL, SW, SL, SW%, MW, ML, MW%) */
@@ -881,4 +884,49 @@ body {
   font-size: 1rem;
   transition: all 0.3s ease-in-out;
   color: black;
+}
+
+/* =========================
+            MODAL
+   ========================= */
+
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1000;
+  width: 90%;
+  max-width: 600px;
+  height: auto;
+}
+
+.modal-content {
+  background-color: #888;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }

@@ -1,5 +1,3 @@
-console.log("index.js loaded on:", window.location.pathname);
-console.log("search:", window.location.search);
 // Matches content
 
 fetch("/js/matches.json")
@@ -106,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const jerseySizeEl = document.getElementById("jerseySize");
   const imgEl = document.getElementById("jerseyImg");
 
-  // if none of these exist, we're not on cart.html (or IDs are wrong)
+  // Failsafe 
   if (!teamNameEl && !priceEl && !jerseySizeEl && !imgEl) return;
 
   const params = new URLSearchParams(window.location.search);
@@ -131,3 +129,34 @@ document.addEventListener("DOMContentLoaded", () => {
     imgEl.alt = jersey.team + " Jersey";
   }
 });
+
+// Modal functionality
+
+const modal = document.getElementById("myModal");
+const span = document.getElementsByClassName("close")[0];
+const btn = document.getElementById("buyBtn");
+
+if (btn) {
+  btn.onclick = function () {
+    modal.style.display = "block";
+  };
+}
+
+if (span) {
+  span.onclick = function () {
+    modal.style.display = "none";
+  };
+}
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+// Set current date and time in modal
+
+const now = new Date();
+const datetime = now.toLocaleString();
+
+document.getElementById("date-time").textContent += datetime;

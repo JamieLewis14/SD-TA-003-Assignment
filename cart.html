@@ -1,97 +1,108 @@
 <!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Absolute</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-    <link href="css/styles.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css"
-    />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="header-inner">
-        <div class="logo-area">
-          <img
-            src="images/sitelogo.png"
-            alt="CoD Esports Hub logo"
-            class="logo"
-          />
-        </div>
 
-        <nav class="main-nav">
-          <a href="index.html" class="nav-link">Home</a>
-          <a href="matches.html" class="nav-link">Matches</a>
-          <a href="standings.html" class="nav-link">Standings</a>
-          <a href="teams.html" class="nav-link">Teams</a>
-          <a href="community.html" class="nav-link">Community</a>
-        </nav>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Absolute</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  <link href="css/styles.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" />
+</head>
 
-    <h1 class="cart-title">Checkout</h1>
-
-    <div class="cart-card">
-      <img id="jerseyImg" alt="" class="cart-image" />
-
-      <div class="cart-details">
-        <p><strong>Team:</strong> <span id="teamName"></span></p>
-        <p><strong>Size:</strong> <span id="jerseySize"></span></p>
-        <p><strong>Price:</strong> <span id="price"></span></p>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo-area">
+        <img src="images/sitelogo.png" alt="CoD Esports Hub logo" class="logo" />
       </div>
 
-      <div class="cart-actions">
-        <button id="buyBtn" type="button" class="cart-btn-buy">Buy</button>
-        <a href="community.html" class="cart-back">Back to Shop</a>
-      </div>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="matches.html" class="nav-link">Matches</a>
+        <a href="standings.html" class="nav-link">Standings</a>
+        <a href="teams.html" class="nav-link">Teams</a>
+        <a href="community.html" class="nav-link">Community</a>
+      </nav>
+    </div>
+  </header>
+
+  <h1 class="cart-title">Checkout</h1>
+
+  <div class="cart-card">
+    <img id="jerseyImg" alt="" class="cart-image" />
+
+    <div class="cart-details">
+      <p><strong>Team:</strong> <span id="teamName"></span></p>
+      <p><strong>Size:</strong> <span id="jerseySize"></span></p>
+      <p><strong>Price:</strong> <span id="price"></span></p>
     </div>
 
-    <footer class="site-footer">
-      <div class="footer-inner">
-        <div class="footer-col">
-          <h3>Absolute CDL</h3>
-          <p>
-            Your home for CDL updates, stats, news, and competitive insights.
-          </p>
-        </div>
+    <div class="cart-actions">
+      <button id="buyBtn" type="button" class="cart-btn-buy">Buy</button>
 
-        <div class="footer-col">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="matches.html">Matches</a></li>
-            <li><a href="standings.html">Standings</a></li>
-            <li><a href="teams.html">Teams</a></li>
-            <li><a href="community.html">News</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Follow Us</h4>
-          <div class="socials">
-            <a href="#">YouTube</a>
-            <a href="#">X</a>
-            <a href="#">Twitch</a>
-            <a href="#">Discord</a>
+      <!-- Modal -->
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>Order Confirmation</h2>
+            <span class="close">&times;</span>
+          </div>
+          <div class="modal-body">
+            <p>Your order has been placed successfully.</p>
+            <p id="date-time">Order date: </p>
           </div>
         </div>
       </div>
 
-      <div class="footer-bottom">
-        <p>© Absolute. All Rights Reserved.</p>
-      </div>
-    </footer>
 
-    <script src="js/index.js"></script>
-  </body>
+      <a href="community.html" class="cart-back">Back to Shop</a>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h3>Absolute CDL</h3>
+        <p>
+          Your home for CDL updates, stats, news, and competitive insights.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="matches.html">Matches</a></li>
+          <li><a href="standings.html">Standings</a></li>
+          <li><a href="teams.html">Teams</a></li>
+          <li><a href="community.html">News</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="socials">
+          <a href="#">YouTube</a>
+          <a href="#">X</a>
+          <a href="#">Twitch</a>
+          <a href="#">Discord</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© Absolute. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/index.js"></script>
+</body>
+
 </html>
