@@ -885,6 +885,21 @@ body {
   transition: all 0.3s ease-in-out;
   color: black;
 }
+.cart-btn-buy:hover {
+  transform: scale(1.05);
+}
+
+.cart-btn-buy:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.shipping-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
 
 /* =========================
             MODAL
@@ -930,3 +945,4 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
+

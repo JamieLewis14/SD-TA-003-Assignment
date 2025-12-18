@@ -160,3 +160,37 @@ const now = new Date();
 const datetime = now.toLocaleString();
 
 document.getElementById("date-time").textContent += datetime;
+
+// Form submission
+
+const form = document.querySelector(".shipping-form");
+const buyBtn = document.getElementById("buyBtn");
+
+const checkFormValidity = () => {
+  buyBtn.disabled = !form.checkValidity();
+};
+
+// Run on every input change
+form.addEventListener("input", checkFormValidity);
+
+// Run once on load
+checkFormValidity();
+
+// STOP page refresh + show modal
+form.addEventListener("submit", (e) => {
+  e.preventDefault(); // <-- this is what stops the refresh
+
+  if (!form.checkValidity()) {
+    form.reportValidity();
+    return;
+  }
+
+  modal.style.display = "block";
+  dateTime.textContent = "Order date: " + new Date().toLocaleString();
+});
+
+closeBtn.addEventListener("click", () => (modal.style.display = "none"));
+window.addEventListener("click", (e) => {
+  if (e.target === modal) modal.style.display = "none";
+});
+
